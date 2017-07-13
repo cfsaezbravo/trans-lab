@@ -1,6 +1,6 @@
 *{
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 
 /*Navbar*/
@@ -8,4 +8,15 @@
 .logo-nav{
     height: 40px;
     margin-top: 7px;
+}
+
+/*Agregando tarjetas*/
+
+.userbox{
+	background-color: yellow;
+	margin: 0px;
+}
+
+.userimage{
+    height: 120px;
 }
