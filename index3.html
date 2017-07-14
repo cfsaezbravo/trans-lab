@@ -10,32 +10,32 @@
 	<link rel="shortcut icon" type="image/png" href="docs/imagen.png">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class='index3'>
 
 	<nav>
-    	<div class="nav-wrapper">
-      		<a href="#!" class="brand-logo center"><img class='logo-nav' src="docs/imagen.png" alt=""></a>
-      		<ul id="slide-out" class="side-nav">
-    			<li><a class="waves-effect" href="#!"><i class="material-icons">attach_money</i>Ver Saldo</a></li>
-    			<li><div class="divider"></div></li>
-    			<li><a class="waves-effect" href="#!"><i class="material-icons">dialpad</i>Calcular Tarifa</a><div class="divider"></div></li>
-    			<li><a class="waves-effect" href="#!"><i class="material-icons">portrait</i>Perfil</a><div class="divider"></div></li>
-    			<li><a class="waves-effect" href="#!"><i class="material-icons">help</i>Preguntas Frecuentes</a><div class="divider"></div></li>
-    			<li><a class="waves-effect" href="#!"><i class="material-icons">home</i>Home</a><div class="divider"></div></li>
-  			</ul>
-  			<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-    	</div>
-  	</nav>
+      <div class="nav-wrapper">
+          <a href="#!" class="brand-logo center"><img class='logo-nav' src="docs/imagen.png" alt=""></a>
+          <ul id="slide-out" class="side-nav">
+          <li><a class="waves-effect" href="index6.html"><i class="material-icons">attach_money</i>Ver Saldo</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="waves-effect" href="index3.html"><i class="material-icons">dialpad</i>Calcular Tarifa</a><div class="divider"></div></li>
+          <li><a class="waves-effect" href="index4.html"><i class="material-icons">portrait</i>Perfil</a><div class="divider"></div></li>
+          <li><a class="waves-effect" href="index5.html"><i class="material-icons">help</i>Preguntas Frecuentes</a><div class="divider"></div></li>
+          <li><a class="waves-effect" href="index2.html"><i class="material-icons">home</i>Home</a><div class="divider"></div></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
   	<div class="container">
   		<div class="row">
-  			<input placeholder="Número de tarjeta" class="num_tarjeta" type="text" class="validate">
+  			<input placeholder="Número de tarjeta" class="num_tarjeta black-text" type="number" class="validate">
   		</div>
   		<br>
-  		<div class="row">
+  		<div class="row row-dropdown1">
   			<div class="col s6">
-  				<label for="option">Tarifa</label>
+  				<label for="option" class='tarifa center-align'>TARIFA</label>
   				<br>
-  				<a class='dropdown-button btn' href='#' data-activates='dropdown1'>Escoge tu opción</a>
+  				<a class='dropdown-button btn btn-tarifa' href='#' data-activates='dropdown1'>Escoge tu opción</a>
   				<ul id='dropdown1' class='dropdown-content'>
     				<li><a href="#!">Alto ($740)</a></li>
     				<li><a href="#!">Medio ($680)</a></li>
@@ -43,9 +43,9 @@
   				</ul>
   			</div>
   			<div class="col s6">
-  				<label for="option">Tarjeta</label>
+  				<label for="option" class='tarjeta'>TARJETA</label>
   				<br>
-  				<a class='dropdown-button btn' href='#' data-activates='dropdown2'>Escoge tu opción</a>
+  				<a class='dropdown-button btn btn-tarjeta' href='#' data-activates='dropdown2'>Escoge tu opción</a>
   				<ul id='dropdown2' class='dropdown-content'>
     				<li><a href="#!">Tarjeta 1</a></li>
     				<li><a href="#!">Tarjeta 2</a></li>
@@ -55,7 +55,7 @@
   		</div>
   		<div class="row center-align">
         <div class="col s12">
-  			 <a class="waves-effect waves-light btn">CALCULAR</a>
+  			 <a class="waves-effect waves-light btn btn-calcular">CALCULAR</a>
         </div>
   		</div>
   	</div>

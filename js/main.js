@@ -25,7 +25,6 @@ $(document).ready(function(){
            	data: {limit: '1200'},
            })
            .done(function(val) {
-           	console.log(urlTarjeta);
            	console.log("success");
            	console.log(val);
            	$('.project').append('<p>Saldo de la tarjeta:'+val.saldoTarjeta+'</p>')

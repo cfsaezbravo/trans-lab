@@ -21,6 +21,10 @@ nav{
     color: white;
 }
 
+.side-nav li>a:hover {
+    color: #f6a800;
+}
+
 .logo-nav{
     height: 40px;
     margin-top: 7px;
@@ -41,12 +45,12 @@ nav{
     height: 220px;
 }
 
-.btn{
+.btn-index1{
 	background-color: #f6a800;
 	margin-left: 100px;
 }
 
-.btn:hover{
+.btn-index1:hover{
 	background-color: grey;
 }
 
@@ -65,6 +69,97 @@ nav{
 
 .registration:hover{
 	color: black;
+}
+
+/*Index2*/
+
+.btn-index2{
+	background-color: #f6a800;
+	width: 300px;
+}
+
+.btn-index2:hover{
+	background-color: grey;
+}
+
+.lista-index2{
+	margin-top: 100px;
+}
+
+/*Index3*/
+
+.index3{
+	background-image: url(../docs/backgroundindex3.jpg);
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.container{
+	margin-top: 60px;
+}
+
+.row-dropdown1{
+	margin-top: 50px;
+}
+
+.tarifa{
+	color: black;
+	font-size: 15px;
+}
+
+.tarjeta{
+	color: black;
+	font-size: 15px;
+}
+
+.btn-tarifa, .btn-tarjeta, .btn-calcular{
+	background-color: #f6a800;
+}
+
+.btn-tarifa, .btn-tarjeta{
+	height: 70px;
+}
+
+.btn-tarifa:hover, .btn-tarjeta:hover, .btn-calcular:hover{
+	background-color: grey;
+}
+
+/*Index4*/
+
+.imgbox{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.datos-row{
+	background-color: #f6a800;
+
+}
+
+.datos-row h6{
+	margin-top: -20px;
+	font-weight: bold;
+}
+
+.datos-row p{
+	margin-bottom: 20px;
+}
+
+.btn-agregartarjeta{
+	background-color: #f6a800;
+}
+
+.btn-agregartarjeta:hover{
+	background-color: grey;
+	font-weight: bold;
+}
+
+/*Index5*/
+
+.titulo-preguntas, .link-preguntas{
+	color: #f6a800;
 }
 
 
