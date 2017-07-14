@@ -212,3 +212,13 @@ nav{
     margin-top: 5px;
 }
 
+.respuestabox{
+	background-color: #f6a800;
+    color: white;
+    width: 180px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+

@@ -31,18 +31,17 @@ $(document).ready(function(){
            .done(function(val) {
            	console.log("success");
 
+            /*Intenté restar los dos valores que entraban, pero no logré hacerlo. Me sale como respuesta: NaN*/
+
            	var valorAlto = $('#valorAlto').val();
             var valorMedio = $('#valorMedio').val();
             var valorBajo = $('#valorBajo').val();
-            var valorAlto2 = parseInt(valorAlto);
-            var valorMedio2 = parseInt(valorMedio);
-            var valorBajo2 = parseInt(valorBajo);
-            var saldoTarjeta = val.saldoTarjeta.slice(1,8);
+            var saldoTarjeta = val.saldoTarjeta.replace(/[$.]/gi, "");
             var saldoTarjeta2 = parseInt(saldoTarjeta);
-            var calcularSaldo = (valorAlto2 - saldoTarjeta2);
-
+            var calcularSaldo = (saldoTarjeta - valorAlto);
 
            	$('.project').append('<li class="saldobox"> El saldo de la tarjeta número ' + infoInput + ' es: ' + val.saldoTarjeta+'</li>')
+            $('.listacalcular').append('<li class="respuestabox"> Su saldo sería: ' + calcularSaldo)
             console.log(calcularSaldo);
            })
            .fail(function() {
