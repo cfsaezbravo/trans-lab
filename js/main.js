@@ -79,7 +79,7 @@ $('.btn-agregartarjeta').click(function(){
 
   var numTarjeta = $('#num_tarjeta').val();
 
-  $('.tarjetas').append('<li>' + numTarjeta + '</li>');
+  $('.tarjetas').append('<li class="cardbox center-align">' + numTarjeta + '</li>');
 
   $('#num_tarjeta').val('');
 });

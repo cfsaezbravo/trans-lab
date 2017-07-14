@@ -165,6 +165,22 @@ nav{
 	font-weight: bold;
 }
 
+.tarjetas{
+	margin-top: 20px;
+}
+
+.cardbox {
+    background-color: #f6a800;
+    color: white;
+    width: 150px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 115px;
+    margin-top: 5px;
+}
+
 /*Index5*/
 
 .titulo-preguntas, .link-preguntas{
