@@ -128,6 +128,15 @@ nav{
 
 /*Index4*/
 
+.userimage{
+    height: 120px;
+}
+
+.userbox{
+	background-color: #222326;
+	margin: 0px;
+}
+
 .imgbox{
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -163,13 +172,13 @@ nav{
 }
 
 
-/*Agregando tarjetas*/
+/*Index6*/
 
-.userbox{
-	background-color: #222326;
-	margin: 0px;
+.btn-tarjeta2{
+	background-color: #f6a800;
 }
 
-.userimage{
-    height: 120px;
+.btn-tarjeta2:hover{
+	background-color: grey;
 }
+

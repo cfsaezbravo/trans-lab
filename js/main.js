@@ -40,4 +40,46 @@ $(document).ready(function(){
     });
 });
 
+/*Local Storage*/
 
+function guardarDatos(){
+  localStorage.name = $('#email').val();
+}
+
+function recuperarDatos(){
+  $(".datos-row").append('<p class="correo-usuario">' + localStorage.name +'</p>');
+}
+
+/*Validación de campos*/
+
+$(document).ready(function() {
+
+  $("#login").click(function(){
+    var email = $("#email").val();
+    var password = $("#password").val();
+
+    if (email == "" || /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) == false){
+      alert("Ingrese un correo válido");
+    }else if (password == "" || password.length < 6) {
+      alert("Ingrese una contraseña válida. Debe tener más de 6 carácteres.")
+    }
+    else{
+      window.location.href="trans-lab.html";
+      guardarDatos();
+      $('#login').attr('href', 'index2.html');
+      recuperarDatos();
+    }
+  })
+
+});
+
+/*Agregar tarjetas*/
+
+$('.btn-agregartarjeta').click(function(){
+
+  var numTarjeta = $('#num_tarjeta').val();
+
+  $('.tarjetas').append('<li>' + numTarjeta + '</li>');
+
+  $('#num_tarjeta').val('');
+});
