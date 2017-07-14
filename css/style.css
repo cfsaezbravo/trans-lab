@@ -198,3 +198,17 @@ nav{
 	background-color: grey;
 }
 
+.dropdown-content li>a{
+	color: #f6a800;
+}
+
+.saldobox{
+	background-color: #f6a800;
+    color: white;
+    width: 380px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+

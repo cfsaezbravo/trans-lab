@@ -8,15 +8,19 @@ $(document).ready(function(){
    $('.collapsible').collapsible();
 });
 
+/*Select*/
+
+$('select').material_select();
+
 /*Traer el JSON*/
 
 $(document).ready(function(){
   $('.btn-calcular').click(function() {
 
-  	var infoInput = $('.num_tarjeta').val();
+  	var infoInput = parseInt($('.num_tarjeta').val());
       
     if($('.num_tarjeta').val() === ''){
-        alert("Debes completar el campo");
+        alert("Debes ingresar tu número de tarjeta");
     }else{
        $.ajax({
            	url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+infoInput,
@@ -26,16 +30,27 @@ $(document).ready(function(){
            })
            .done(function(val) {
            	console.log("success");
-           	console.log(val);
-           	$('.project').append('<p>Saldo de la tarjeta:'+val.saldoTarjeta+'</p>')
+
+           	var valorAlto = $('#valorAlto').val();
+            var valorMedio = $('#valorMedio').val();
+            var valorBajo = $('#valorBajo').val();
+            var valorAlto2 = parseInt(valorAlto);
+            var valorMedio2 = parseInt(valorMedio);
+            var valorBajo2 = parseInt(valorBajo);
+            var saldoTarjeta = val.saldoTarjeta.slice(1,8);
+            var saldoTarjeta2 = parseInt(saldoTarjeta);
+            var calcularSaldo = (valorAlto2 - saldoTarjeta2);
+
+
+           	$('.project').append('<li class="saldobox"> El saldo de la tarjeta número ' + infoInput + ' es: ' + val.saldoTarjeta+'</li>')
+            console.log(calcularSaldo);
            })
            .fail(function() {
            	console.log("error");
            })
            .always(function() {
            	console.log("complete");
-           });
-               
+           });   
         }
     });
 });
@@ -70,7 +85,6 @@ $(document).ready(function() {
       recuperarDatos();
     }
   })
-
 });
 
 /*Agregar tarjetas*/

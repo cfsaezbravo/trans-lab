@@ -32,32 +32,36 @@
   		</div>
   		<br>
   		<div class="row row-dropdown1">
-  			<div class="col s6">
+  			<div class="input-field col s6">
   				<label for="option" class='tarifa center-align'>TARIFA</label>
   				<br>
-  				<a class='dropdown-button btn btn-tarifa' href='#' data-activates='dropdown1'>Escoge tu opción</a>
-  				<ul id='dropdown1' class='dropdown-content'>
-    				<li><a href="#!">Alto ($740)</a></li>
-    				<li><a href="#!">Medio ($680)</a></li>
-    				<li><a href="#!">Bajo ($640)</a></li>
-  				</ul>
+  				<select>
+            <option value="" disabled selected class='btn-tarifa'>Escoje tu opción</option>
+            <option value="740" id='valorAlto'>Tarifa Alta ($740)</option>
+            <option value="680" id='valorMedio'>Tarifa Media ($680)</option>
+            <option value="640" id='valorBajo'>Tarifa Baja ($640)</option>
+          </select>
   			</div>
-  			<div class="col s6">
-  				<label for="option" class='tarjeta'>TARJETA</label>
-  				<br>
-  				<a class='dropdown-button btn btn-tarjeta' href='#' data-activates='dropdown2'>Escoge tu opción</a>
-  				<ul id='dropdown2' class='dropdown-content'>
-    				<li><a href="#!">Tarjeta 1</a></li>
-    				<li><a href="#!">Tarjeta 2</a></li>
-    				<li><a href="#!">Tarjeta 3</a></li>
-  				</ul>
-  			</div>
-  		</div>
+  			<div class="input-field col s6">
+          <label for="option" class='tarifa center-align'>TARJETA</label>
+          <br>
+          <select>
+            <option value="" disabled selected class='btn-tarjeta'>Escoje tu opción</option>
+            <option value="76596941">Tarjeta Cami</option>
+            <option value="16896898">Tarjeta Franco</option>
+            <option value="76584548">Mi tarjeta</option>
+          </select>
+        </div>
   		<div class="row center-align">
         <div class="col s12">
   			 <a class="waves-effect waves-light btn btn-calcular">CALCULAR</a>
         </div>
   		</div>
+      <div class="row">
+        <div class="col s12">
+          <ul class='listacalcular'></ul>
+        </div>
+      </div>
   	</div>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
