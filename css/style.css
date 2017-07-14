@@ -5,15 +5,73 @@
 
 /*Navbar*/
 
+nav{
+	background-color: #222326;
+}
+
+.side-nav{
+	background-color: #222326;
+}
+
+.side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a li>a>[class*="mdi-"], .side-nav li>a>i.material-icons {
+    color: white;
+}
+
+.side-nav li>a {
+    color: white;
+}
+
 .logo-nav{
     height: 40px;
     margin-top: 7px;
 }
 
+/*Index1*/
+
+.page1{
+	background-image: url(../docs/backgroundopacity.jpg);
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.logo-inicio{
+	margin-top: 50px;
+    height: 220px;
+}
+
+.btn{
+	background-color: #f6a800;
+	margin-left: 100px;
+}
+
+.btn:hover{
+	background-color: grey;
+}
+
+.olvidaste{
+	margin-left: 100px;
+	color: black;
+}
+
+.olvidaste:hover{
+	color: #f6a800;
+}
+
+.registration{
+	color: #f6a800;
+}
+
+.registration:hover{
+	color: black;
+}
+
+
 /*Agregando tarjetas*/
 
 .userbox{
-	background-color: yellow;
+	background-color: #222326;
 	margin: 0px;
 }
 
